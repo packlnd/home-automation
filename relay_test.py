@@ -17,10 +17,10 @@ def test_GPIO(pin_no):
 def main():
     GPIO.setmode(GPIO.BCM)
     pins = [17, 27]
-
     init_pins(pins)
-
     for _ in range(5):
         for p in pins:
             test_GPIO(p)
     GPIO.cleanup()
+
+main()
