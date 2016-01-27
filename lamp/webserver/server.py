@@ -7,6 +7,14 @@ cal = None
 def index():
     return render_template('index.html')
 
+@app.route("/turn_on")
+def turn_on():
+    raise NotImplementedError
+
+@app.route("/turn_off")
+def turn_off():
+    raise NotImplementedError
+
 if __name__ == "__main__":
     app.debug=True
     app.run()
