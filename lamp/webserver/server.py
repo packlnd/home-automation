@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect
+from pi import lamp_on, lamp_off
 
 app = Flask(__name__)
 cal = None
@@ -9,11 +10,11 @@ def index():
 
 @app.route("/turn_on")
 def turn_on():
-    raise NotImplementedError
+    lamp_on()
 
 @app.route("/turn_off")
 def turn_off():
-    raise NotImplementedError
+    lamp_off()
 
 if __name__ == "__main__":
     app.debug=True
