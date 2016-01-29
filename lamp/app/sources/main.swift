@@ -1,5 +1,5 @@
 import Foundation
-imort Glibc
+import Glibc
 
 let player = ["rock", "paper", "scissors", "lizard", "spock"]
 
