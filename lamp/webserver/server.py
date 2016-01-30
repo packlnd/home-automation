@@ -2,11 +2,6 @@ from flask import Flask, render_template, request, redirect
 from pi import lamp_on, lamp_off
 
 app = Flask(__name__)
-cal = None
-
-@app.route("/")
-def index():
-    return render_template('index.html')
 
 @app.route("/turn_on")
 def turn_on():
