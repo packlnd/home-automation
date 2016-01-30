@@ -5,10 +5,12 @@ app = Flask(__name__)
 
 @app.route("/turn_on")
 def turn_on():
+    #TODO: Authentication in header
     lamp_on()
 
 @app.route("/turn_off")
 def turn_off():
+    #TODO: Authentication in header
     lamp_off()
 
 if __name__ == "__main__":
