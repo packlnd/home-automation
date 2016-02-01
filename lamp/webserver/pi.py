@@ -1,9 +1,19 @@
 import RPi.GPIO as GPIO
 
-def lamp_on():
-    raise NotImplementedError
+class Pi:
+    def __init__(self,on,off):
+        self.on = on
+        self.off = off
 
-def lamp_off():
-    raise NotImplementedError
+    def init_GPIOs(self,pins):
+        for pin in pins:
+            GPIO.setup(pin, GPIO.OUT)
+            GPIO.output(pin, GPIO.HIGH)
 
-#TODO: Soemthing missing
+    def lamp_on(self):
+        GPIO.output(self.on, GPIO.LOW)
+        GPIO.output(self.on, GPIO.HIGH)
+
+    def lamp_off(self):
+        GPIO.output(self.off, GPIO.LOW)
+        GPIO.output(self.off, GPIO.HIGH)
