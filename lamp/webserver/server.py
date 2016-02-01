@@ -5,6 +5,10 @@ app = Flask(__name__)
 global pi
 pi = Pi(on=7, off=17)
 
+@app.route("/")
+def index():
+    return render_template('index.html')
+
 @app.route("/turn_on")
 def turn_on():
     #TODO: Authentication in header
