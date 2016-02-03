@@ -1,8 +1,17 @@
 $(function () {
-    $("lamp-on").on("click", function() {
-
+    $("lamp").on("click", function() {
+        if ($(this).attr("value") == "ON") {
+            turn_on();
+        } else {
+            turn_off();
+        }
     });
-    $("lamp-off").off("click", function() {
-
-    });
+    function turn_on() {
+        // Ajax call
+        $("lamp").attr("value") = "OFF";
+    }
+    function turn_off() {
+        // Ajax call
+        $("lamp").attr("value") = "ON";
+    }
 });
