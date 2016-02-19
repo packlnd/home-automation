@@ -18,13 +18,13 @@ def render(html):
 def index():
     return render('templates/index.haml')
 
-@app.route("/turn_on")
-def turn_on():
+@app.route("/on")
+def on():
     #TODO: Authentication in header
     pi.lamp_on()
 
-@app.route("/turn_off")
-def turn_off():
+@app.route("/off")
+def off():
     #TODO: Authentication in header
     pi.lamp_off()
 

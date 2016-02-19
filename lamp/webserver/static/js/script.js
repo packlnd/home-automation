@@ -7,11 +7,19 @@ $(function () {
         }
     });
     function turn_on() {
-        // Ajax call
-        $("lamp").attr("value") = "OFF";
+        $.ajax({
+            url:"/on",
+            success: function() {
+                $("lamp").attr("value") = "OFF";
+            }
+        });
     }
     function turn_off() {
-        // Ajax call
-        $("lamp").attr("value") = "ON";
+        $.ajax({
+            url:"/off",
+            success: function() {
+                $("lamp").attr("value") = "ON";
+            }
+        });
     }
 });
