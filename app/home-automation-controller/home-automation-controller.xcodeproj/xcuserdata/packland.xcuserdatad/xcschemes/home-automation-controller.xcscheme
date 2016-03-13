@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E9711B5D1C94CBC5004776FA"
+               BlueprintIdentifier = "E9711BDD1C94DEBE004776FA"
                BuildableName = "home-automation-controller.app"
                BlueprintName = "home-automation-controller"
                ReferencedContainer = "container:home-automation-controller.xcodeproj">
@@ -28,31 +28,11 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E9711B731C94CBC5004776FA"
-               BuildableName = "home-automation-controllerTests.xctest"
-               BlueprintName = "home-automation-controllerTests"
-               ReferencedContainer = "container:home-automation-controller.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E9711B7E1C94CBC5004776FA"
-               BuildableName = "home-automation-controllerUITests.xctest"
-               BlueprintName = "home-automation-controllerUITests"
-               ReferencedContainer = "container:home-automation-controller.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E9711B5D1C94CBC5004776FA"
+            BlueprintIdentifier = "E9711BDD1C94DEBE004776FA"
             BuildableName = "home-automation-controller.app"
             BlueprintName = "home-automation-controller"
             ReferencedContainer = "container:home-automation-controller.xcodeproj">
@@ -75,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E9711B5D1C94CBC5004776FA"
+            BlueprintIdentifier = "E9711BDD1C94DEBE004776FA"
             BuildableName = "home-automation-controller.app"
             BlueprintName = "home-automation-controller"
             ReferencedContainer = "container:home-automation-controller.xcodeproj">
@@ -94,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E9711B5D1C94CBC5004776FA"
+            BlueprintIdentifier = "E9711BDD1C94DEBE004776FA"
             BuildableName = "home-automation-controller.app"
             BlueprintName = "home-automation-controller"
             ReferencedContainer = "container:home-automation-controller.xcodeproj">

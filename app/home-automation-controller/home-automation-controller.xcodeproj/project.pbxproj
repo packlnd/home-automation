@@ -7,66 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E9711B621C94CBC5004776FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9711B611C94CBC5004776FA /* AppDelegate.swift */; };
-		E9711B641C94CBC5004776FA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9711B631C94CBC5004776FA /* FirstViewController.swift */; };
-		E9711B661C94CBC5004776FA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9711B651C94CBC5004776FA /* SecondViewController.swift */; };
-		E9711B691C94CBC5004776FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9711B671C94CBC5004776FA /* Main.storyboard */; };
-		E9711B6B1C94CBC5004776FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9711B6A1C94CBC5004776FA /* Assets.xcassets */; };
-		E9711B6E1C94CBC5004776FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9711B6C1C94CBC5004776FA /* LaunchScreen.storyboard */; };
-		E9711B791C94CBC5004776FA /* home_automation_controllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9711B781C94CBC5004776FA /* home_automation_controllerTests.swift */; };
-		E9711B841C94CBC5004776FA /* home_automation_controllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9711B831C94CBC5004776FA /* home_automation_controllerUITests.swift */; };
+		E9711BE21C94DEBE004776FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9711BE11C94DEBE004776FA /* AppDelegate.swift */; };
+		E9711BE41C94DEBE004776FA /* LampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9711BE31C94DEBE004776FA /* LampViewController.swift */; };
+		E9711BE61C94DEBE004776FA /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9711BE51C94DEBE004776FA /* MusicViewController.swift */; };
+		E9711BE91C94DEBE004776FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9711BE71C94DEBE004776FA /* Main.storyboard */; };
+		E9711BEB1C94DEBE004776FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9711BEA1C94DEBE004776FA /* Assets.xcassets */; };
+		E9711BEE1C94DEBE004776FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9711BEC1C94DEBE004776FA /* LaunchScreen.storyboard */; };
+		E9711BF81C95000C004776FA /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9711BF71C95000C004776FA /* TVViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		E9711B751C94CBC5004776FA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9711B561C94CBC5004776FA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E9711B5D1C94CBC5004776FA;
-			remoteInfo = "home-automation-controller";
-		};
-		E9711B801C94CBC5004776FA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9711B561C94CBC5004776FA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E9711B5D1C94CBC5004776FA;
-			remoteInfo = "home-automation-controller";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		E9711B5E1C94CBC5004776FA /* home-automation-controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "home-automation-controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9711B611C94CBC5004776FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9711B631C94CBC5004776FA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		E9711B651C94CBC5004776FA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		E9711B681C94CBC5004776FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E9711B6A1C94CBC5004776FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E9711B6D1C94CBC5004776FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E9711B6F1C94CBC5004776FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9711B741C94CBC5004776FA /* home-automation-controllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "home-automation-controllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9711B781C94CBC5004776FA /* home_automation_controllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_automation_controllerTests.swift; sourceTree = "<group>"; };
-		E9711B7A1C94CBC5004776FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9711B7F1C94CBC5004776FA /* home-automation-controllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "home-automation-controllerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9711B831C94CBC5004776FA /* home_automation_controllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_automation_controllerUITests.swift; sourceTree = "<group>"; };
-		E9711B851C94CBC5004776FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9711BDE1C94DEBE004776FA /* home-automation-controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "home-automation-controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9711BE11C94DEBE004776FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9711BE31C94DEBE004776FA /* LampViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampViewController.swift; sourceTree = "<group>"; };
+		E9711BE51C94DEBE004776FA /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		E9711BE81C94DEBE004776FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9711BEA1C94DEBE004776FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9711BED1C94DEBE004776FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9711BEF1C94DEBE004776FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9711BF71C95000C004776FA /* TVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E9711B5B1C94CBC5004776FA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9711B711C94CBC5004776FA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9711B7C1C94CBC5004776FA /* Frameworks */ = {
+		E9711BDB1C94DEBE004776FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,68 +39,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E9711B551C94CBC5004776FA = {
+		E9711BD51C94DEBE004776FA = {
 			isa = PBXGroup;
 			children = (
-				E9711B601C94CBC5004776FA /* home-automation-controller */,
-				E9711B771C94CBC5004776FA /* home-automation-controllerTests */,
-				E9711B821C94CBC5004776FA /* home-automation-controllerUITests */,
-				E9711B5F1C94CBC5004776FA /* Products */,
+				E9711BE01C94DEBE004776FA /* home-automation-controller */,
+				E9711BDF1C94DEBE004776FA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E9711B5F1C94CBC5004776FA /* Products */ = {
+		E9711BDF1C94DEBE004776FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9711B5E1C94CBC5004776FA /* home-automation-controller.app */,
-				E9711B741C94CBC5004776FA /* home-automation-controllerTests.xctest */,
-				E9711B7F1C94CBC5004776FA /* home-automation-controllerUITests.xctest */,
+				E9711BDE1C94DEBE004776FA /* home-automation-controller.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9711B601C94CBC5004776FA /* home-automation-controller */ = {
+		E9711BE01C94DEBE004776FA /* home-automation-controller */ = {
 			isa = PBXGroup;
 			children = (
-				E9711B611C94CBC5004776FA /* AppDelegate.swift */,
-				E9711B631C94CBC5004776FA /* FirstViewController.swift */,
-				E9711B651C94CBC5004776FA /* SecondViewController.swift */,
-				E9711B671C94CBC5004776FA /* Main.storyboard */,
-				E9711B6A1C94CBC5004776FA /* Assets.xcassets */,
-				E9711B6C1C94CBC5004776FA /* LaunchScreen.storyboard */,
-				E9711B6F1C94CBC5004776FA /* Info.plist */,
+				E9711BE11C94DEBE004776FA /* AppDelegate.swift */,
+				E9711BE31C94DEBE004776FA /* LampViewController.swift */,
+				E9711BE51C94DEBE004776FA /* MusicViewController.swift */,
+				E9711BF71C95000C004776FA /* TVViewController.swift */,
+				E9711BE71C94DEBE004776FA /* Main.storyboard */,
+				E9711BEA1C94DEBE004776FA /* Assets.xcassets */,
+				E9711BEC1C94DEBE004776FA /* LaunchScreen.storyboard */,
+				E9711BEF1C94DEBE004776FA /* Info.plist */,
 			);
 			path = "home-automation-controller";
-			sourceTree = "<group>";
-		};
-		E9711B771C94CBC5004776FA /* home-automation-controllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				E9711B781C94CBC5004776FA /* home_automation_controllerTests.swift */,
-				E9711B7A1C94CBC5004776FA /* Info.plist */,
-			);
-			path = "home-automation-controllerTests";
-			sourceTree = "<group>";
-		};
-		E9711B821C94CBC5004776FA /* home-automation-controllerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E9711B831C94CBC5004776FA /* home_automation_controllerUITests.swift */,
-				E9711B851C94CBC5004776FA /* Info.plist */,
-			);
-			path = "home-automation-controllerUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E9711B5D1C94CBC5004776FA /* home-automation-controller */ = {
+		E9711BDD1C94DEBE004776FA /* home-automation-controller */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9711B881C94CBC5004776FA /* Build configuration list for PBXNativeTarget "home-automation-controller" */;
+			buildConfigurationList = E9711BF21C94DEBE004776FA /* Build configuration list for PBXNativeTarget "home-automation-controller" */;
 			buildPhases = (
-				E9711B5A1C94CBC5004776FA /* Sources */,
-				E9711B5B1C94CBC5004776FA /* Frameworks */,
-				E9711B5C1C94CBC5004776FA /* Resources */,
+				E9711BDA1C94DEBE004776FA /* Sources */,
+				E9711BDB1C94DEBE004776FA /* Frameworks */,
+				E9711BDC1C94DEBE004776FA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -145,72 +87,26 @@
 			);
 			name = "home-automation-controller";
 			productName = "home-automation-controller";
-			productReference = E9711B5E1C94CBC5004776FA /* home-automation-controller.app */;
+			productReference = E9711BDE1C94DEBE004776FA /* home-automation-controller.app */;
 			productType = "com.apple.product-type.application";
-		};
-		E9711B731C94CBC5004776FA /* home-automation-controllerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E9711B8B1C94CBC5004776FA /* Build configuration list for PBXNativeTarget "home-automation-controllerTests" */;
-			buildPhases = (
-				E9711B701C94CBC5004776FA /* Sources */,
-				E9711B711C94CBC5004776FA /* Frameworks */,
-				E9711B721C94CBC5004776FA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E9711B761C94CBC5004776FA /* PBXTargetDependency */,
-			);
-			name = "home-automation-controllerTests";
-			productName = "home-automation-controllerTests";
-			productReference = E9711B741C94CBC5004776FA /* home-automation-controllerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E9711B7E1C94CBC5004776FA /* home-automation-controllerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E9711B8E1C94CBC5004776FA /* Build configuration list for PBXNativeTarget "home-automation-controllerUITests" */;
-			buildPhases = (
-				E9711B7B1C94CBC5004776FA /* Sources */,
-				E9711B7C1C94CBC5004776FA /* Frameworks */,
-				E9711B7D1C94CBC5004776FA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E9711B811C94CBC5004776FA /* PBXTargetDependency */,
-			);
-			name = "home-automation-controllerUITests";
-			productName = "home-automation-controllerUITests";
-			productReference = E9711B7F1C94CBC5004776FA /* home-automation-controllerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E9711B561C94CBC5004776FA /* Project object */ = {
+		E9711BD61C94DEBE004776FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Patrik Ackland";
 				TargetAttributes = {
-					E9711B5D1C94CBC5004776FA = {
+					E9711BDD1C94DEBE004776FA = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 7ZKJJQ34UB;
-					};
-					E9711B731C94CBC5004776FA = {
-						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 7ZKJJQ34UB;
-						TestTargetID = E9711B5D1C94CBC5004776FA;
-					};
-					E9711B7E1C94CBC5004776FA = {
-						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 7ZKJJQ34UB;
-						TestTargetID = E9711B5D1C94CBC5004776FA;
 					};
 				};
 			};
-			buildConfigurationList = E9711B591C94CBC5004776FA /* Build configuration list for PBXProject "home-automation-controller" */;
+			buildConfigurationList = E9711BD91C94DEBE004776FA /* Build configuration list for PBXProject "home-automation-controller" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -218,100 +114,56 @@
 				en,
 				Base,
 			);
-			mainGroup = E9711B551C94CBC5004776FA;
-			productRefGroup = E9711B5F1C94CBC5004776FA /* Products */;
+			mainGroup = E9711BD51C94DEBE004776FA;
+			productRefGroup = E9711BDF1C94DEBE004776FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E9711B5D1C94CBC5004776FA /* home-automation-controller */,
-				E9711B731C94CBC5004776FA /* home-automation-controllerTests */,
-				E9711B7E1C94CBC5004776FA /* home-automation-controllerUITests */,
+				E9711BDD1C94DEBE004776FA /* home-automation-controller */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E9711B5C1C94CBC5004776FA /* Resources */ = {
+		E9711BDC1C94DEBE004776FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9711B6E1C94CBC5004776FA /* LaunchScreen.storyboard in Resources */,
-				E9711B6B1C94CBC5004776FA /* Assets.xcassets in Resources */,
-				E9711B691C94CBC5004776FA /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9711B721C94CBC5004776FA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9711B7D1C94CBC5004776FA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E9711BEE1C94DEBE004776FA /* LaunchScreen.storyboard in Resources */,
+				E9711BEB1C94DEBE004776FA /* Assets.xcassets in Resources */,
+				E9711BE91C94DEBE004776FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E9711B5A1C94CBC5004776FA /* Sources */ = {
+		E9711BDA1C94DEBE004776FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9711B661C94CBC5004776FA /* SecondViewController.swift in Sources */,
-				E9711B621C94CBC5004776FA /* AppDelegate.swift in Sources */,
-				E9711B641C94CBC5004776FA /* FirstViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9711B701C94CBC5004776FA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E9711B791C94CBC5004776FA /* home_automation_controllerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9711B7B1C94CBC5004776FA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E9711B841C94CBC5004776FA /* home_automation_controllerUITests.swift in Sources */,
+				E9711BE61C94DEBE004776FA /* MusicViewController.swift in Sources */,
+				E9711BE21C94DEBE004776FA /* AppDelegate.swift in Sources */,
+				E9711BF81C95000C004776FA /* TVViewController.swift in Sources */,
+				E9711BE41C94DEBE004776FA /* LampViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		E9711B761C94CBC5004776FA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E9711B5D1C94CBC5004776FA /* home-automation-controller */;
-			targetProxy = E9711B751C94CBC5004776FA /* PBXContainerItemProxy */;
-		};
-		E9711B811C94CBC5004776FA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E9711B5D1C94CBC5004776FA /* home-automation-controller */;
-			targetProxy = E9711B801C94CBC5004776FA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		E9711B671C94CBC5004776FA /* Main.storyboard */ = {
+		E9711BE71C94DEBE004776FA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E9711B681C94CBC5004776FA /* Base */,
+				E9711BE81C94DEBE004776FA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		E9711B6C1C94CBC5004776FA /* LaunchScreen.storyboard */ = {
+		E9711BEC1C94DEBE004776FA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E9711B6D1C94CBC5004776FA /* Base */,
+				E9711BED1C94DEBE004776FA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -319,7 +171,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E9711B861C94CBC5004776FA /* Debug */ = {
+		E9711BF01C94DEBE004776FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -363,7 +215,7 @@
 			};
 			name = Debug;
 		};
-		E9711B871C94CBC5004776FA /* Release */ = {
+		E9711BF11C94DEBE004776FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -400,7 +252,7 @@
 			};
 			name = Release;
 		};
-		E9711B891C94CBC5004776FA /* Debug */ = {
+		E9711BF31C94DEBE004776FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -411,7 +263,7 @@
 			};
 			name = Debug;
 		};
-		E9711B8A1C94CBC5004776FA /* Release */ = {
+		E9711BF41C94DEBE004776FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -419,94 +271,30 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "se.ackland.patrik.home-automation-controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		E9711B8C1C94CBC5004776FA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "home-automation-controllerTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "se.ackland.patrik.home-automation-controllerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/home-automation-controller.app/home-automation-controller";
-			};
-			name = Debug;
-		};
-		E9711B8D1C94CBC5004776FA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "home-automation-controllerTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "se.ackland.patrik.home-automation-controllerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/home-automation-controller.app/home-automation-controller";
-			};
-			name = Release;
-		};
-		E9711B8F1C94CBC5004776FA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "home-automation-controllerUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "se.ackland.patrik.home-automation-controllerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "home-automation-controller";
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		E9711B901C94CBC5004776FA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "home-automation-controllerUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "se.ackland.patrik.home-automation-controllerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "home-automation-controller";
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E9711B591C94CBC5004776FA /* Build configuration list for PBXProject "home-automation-controller" */ = {
+		E9711BD91C94DEBE004776FA /* Build configuration list for PBXProject "home-automation-controller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9711B861C94CBC5004776FA /* Debug */,
-				E9711B871C94CBC5004776FA /* Release */,
+				E9711BF01C94DEBE004776FA /* Debug */,
+				E9711BF11C94DEBE004776FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9711B881C94CBC5004776FA /* Build configuration list for PBXNativeTarget "home-automation-controller" */ = {
+		E9711BF21C94DEBE004776FA /* Build configuration list for PBXNativeTarget "home-automation-controller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9711B891C94CBC5004776FA /* Debug */,
-				E9711B8A1C94CBC5004776FA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		E9711B8B1C94CBC5004776FA /* Build configuration list for PBXNativeTarget "home-automation-controllerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E9711B8C1C94CBC5004776FA /* Debug */,
-				E9711B8D1C94CBC5004776FA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		E9711B8E1C94CBC5004776FA /* Build configuration list for PBXNativeTarget "home-automation-controllerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E9711B8F1C94CBC5004776FA /* Debug */,
-				E9711B901C94CBC5004776FA /* Release */,
+				E9711BF31C94DEBE004776FA /* Debug */,
+				E9711BF41C94DEBE004776FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E9711B561C94CBC5004776FA /* Project object */;
+	rootObject = E9711BD61C94DEBE004776FA /* Project object */;
 }

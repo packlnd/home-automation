@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  home-automation-controller
 //
 //  Created by Patrik Ackland on 3/12/16.
@@ -8,18 +8,17 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
-
+class SettingsViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
-
