@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LampViewController: UIViewController {
     override func viewDidLoad() {
