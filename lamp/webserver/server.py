@@ -14,10 +14,6 @@ pi = Pi(on=7, off=17)
 def render(html):
     return lookup.get_template(html).render_unicode()
 
-@app.route("/")
-def index():
-    return render('templates/index.haml')
-
 @app.route("/on")
 def on():
     #TODO: Authentication in header
