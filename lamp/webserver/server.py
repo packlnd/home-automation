@@ -1,9 +1,13 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from pi import Pi
 import os
 
 app = Flask(__name__)
 pi = Pi(on=17, off=27)
+
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 @app.route("/on")
 def on():
