@@ -21,6 +21,10 @@ class LampViewController: UIViewController {
     }
     
     @IBAction func onOffSwitch(sender: UISwitch) {
+        let ip = "10.157.160.44"
+        let action = sender.on ? "on" : "off"
+        let url = "pi@\(ip):5000/\(action)"
+        Alamofire.request(.GET, url)
         print("It's " + sender.on.description + "!")
     }
 }
