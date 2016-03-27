@@ -12,14 +12,12 @@ def index():
 @app.route("/on")
 def on():
     #TODO: Authentication in header
-    print "ON"
     pi.lamp_on()
     return jsonify({'status': 200})
 
 @app.route("/off")
 def off():
     #TODO: Authentication in header
-    print "OFF"
     pi.lamp_off()
     return jsonify({'status': 200})
 
