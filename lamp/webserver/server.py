@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify, render_template
 from pi import Pi
 import os
 
+# Hi Vincent and Gabriel
+
 app = Flask(__name__)
 pi = Pi(on=17, off=27)
 
