@@ -2,7 +2,6 @@ import RPi.GPIO as GPIO
 import time
 
 GPIO.setmode(GPIO.BCM)
-
 class Pi:
     def init_pin(self, pin):
         GPIO.setup(pin, GPIO.OUT)
