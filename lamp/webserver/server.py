@@ -5,7 +5,7 @@ import os
 # Hi Vincent and Gabriel
 
 app = Flask(__name__)
-pi = Pi(on=17, off=27)
+pi = Pi(on=22, off=27)
 
 @app.route("/")
 def index():
