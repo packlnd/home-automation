@@ -11,6 +11,10 @@ pi = Pi(on=17, off=27)
 def index():
     return render_template("index.html")
 
+@app.route("/stats")
+def stats():
+    raise NotImplementedError
+
 @app.route("/on")
 def on():
     #TODO: Authentication in header
