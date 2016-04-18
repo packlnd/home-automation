@@ -2,8 +2,6 @@ from flask import Flask, request, jsonify, render_template
 from pi import Pi
 import os
 
-# Hi Vincent and Gabriel
-
 app = Flask(__name__)
 pi = Pi(on=22, off=27)
 
@@ -14,6 +12,10 @@ def index():
 @app.route("/stats")
 def stats():
     raise NotImplementedError
+
+@app.route("/test")
+def on():
+    return jsonify({'on': })
 
 @app.route("/on")
 def on():
