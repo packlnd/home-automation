@@ -4,28 +4,30 @@ import os
 
 app = Flask(__name__)
 pi = Pi(on=27, off=22)
+global status
+status = False
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html",data=status)
 
 @app.route("/stats")
 def stats():
     raise NotImplementedError
 
-@app.route("/test")
-def on():
-    return jsonify({'on': })
-
 @app.route("/on")
 def on():
     #TODO: Authentication in header
     pi.lamp_on()
+    global status
+    status = True
     return jsonify({'status': 200})
 
 @app.route("/off")
 def off():
     #TODO: Authentication in header
+    global status
+    status = False
     pi.lamp_off()
     return jsonify({'status': 200})
 
