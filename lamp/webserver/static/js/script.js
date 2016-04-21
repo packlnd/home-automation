@@ -1,4 +1,5 @@
 $(function() {
+  $('.timepicker').wickedpicker();
   $("#myonoffswitch").on('click', function() {
     console.log(this.checked);
     var ep = this.checked ? "on" : "off";
