@@ -11,6 +11,10 @@ status = False
 def index():
     return render_template("index.html",data=status)
 
+@app.route("/morning_alarm")
+def morning():
+    raise NotImplementedError
+
 @app.route("/stats")
 def stats():
     raise NotImplementedError
