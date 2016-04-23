@@ -7,14 +7,15 @@
   <title>Lamp project</title>
 </head>
 <body>
-  <h3>On/Off</h3>
-  <div class="onoffswitch">
-    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"{% ' checked' if data%}>
-    <label class="onoffswitch-label" for="myonoffswitch">
-      <span class="onoffswitch-inner"></span>
-      <span class="onoffswitch-switch"></span>
-    </label>
-  </div>
-  <h3>Morning light</h3>
-  <input type="text" name="timepicker" class="timepicker"/>
+  <center>
+    <div class="onoffswitch">
+      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"{% ' checked' if data%}>
+      <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+      </label>
+    </div>
+    <h3>Morning light</h3>
+    <input id="input-time" type="text" name="timepicker" class="timepicker"/>
+  </center>
 </body>
