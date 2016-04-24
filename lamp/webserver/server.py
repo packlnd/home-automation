@@ -17,7 +17,7 @@ def morning():
 
 @app.route("/stats")
 def stats():
-    raise NotImplementedError
+    return jsonify(pi.get_stats())
 
 @app.route("/on")
 def on():

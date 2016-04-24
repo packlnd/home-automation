@@ -1,5 +1,6 @@
 import RPi.GPIO as GPIO
 import time
+from logger import Logger
 
 GPIO.setmode(GPIO.BCM)
 class Pi:
@@ -14,6 +15,7 @@ class Pi:
     def __init__(self,on,off):
         self.on = on
         self.off = off
+        self.logger = Logger()
         self.init_GPIOs()
 
     def simulate_button(self, btn):
@@ -22,7 +24,12 @@ class Pi:
         GPIO.output(btn, GPIO.HIGH)
 
     def lamp_on(self):
+        logger.log_on()
         self.simulate_button(self.on)
 
     def lamp_off(self):
+        logger.log_off()
         self.simulate_button(self.off)
+
+    def get_stats(self):
+        raise NotImplementedError
