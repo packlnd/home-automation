@@ -32,4 +32,4 @@ class Pi:
         self.simulate_button(self.off)
 
     def get_stats(self):
-        raise NotImplementedError
+        return logger.get_stats()
