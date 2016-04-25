@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 class Logger:
-    def __init__():
+    def __init__(self):
         on = defaultdict(lambda: 0)
         off = defaultdict(lambda: 0)
     def log_on(self):
