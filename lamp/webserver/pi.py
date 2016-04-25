@@ -24,12 +24,12 @@ class Pi:
         GPIO.output(btn, GPIO.HIGH)
 
     def lamp_on(self):
-        logger.log_on()
+        self.logger.log_on()
         self.simulate_button(self.on)
 
     def lamp_off(self):
-        logger.log_off()
+        self.logger.log_off()
         self.simulate_button(self.off)
 
     def get_stats(self):
-        return logger.get_stats()
+        return self.logger.get_stats()
