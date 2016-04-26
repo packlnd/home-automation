@@ -1,7 +1,7 @@
 $(function() {
   $('.timepicker').wickedpicker();
-  $("#input-time").on('input', function() {
-    var time = $("#input-time").text();
+  $("#inputtime").on('input', function() {
+    var time = $('.timepicker').wickedpicker('time');
     console.log(time);
     $.ajax({
       type: "POST",
