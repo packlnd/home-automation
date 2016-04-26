@@ -1,4 +1,5 @@
 from collections import defaultdict
+from datetime import datetime
 
 class Logger:
     def __init__(self):
@@ -14,4 +15,4 @@ class Logger:
         print 'OFF',t
 
     def get_stats(self):
-        return {'on':on, 'off':off}
+        return {'on':self.on, 'off':self.off}
