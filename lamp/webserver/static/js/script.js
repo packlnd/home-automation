@@ -23,4 +23,12 @@ $(function() {
       }
     })
   });
+  $.ajax({
+    type: "GET",
+    url: "/stats",
+    success: function(data) {
+      console.log(data);
+      $("#stats").html(JSON.stringify(data));
+    }
+  });
 });
