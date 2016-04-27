@@ -5,14 +5,26 @@ class Logger:
     def __init__(self):
         self.on = defaultdict(lambda: 0)
         self.off = defaultdict(lambda: 0)
+        self.stats = []
+
     def log_on(self):
-        t = datetime.now().strftime("%H:%M")
-	self.on[t] += 1
+        self.lastOn = datetime.now()
+        t = self.lastOn.strftime("%H:%M")
+        self.on[t] += 1
         print 'ON',t
+
     def log_off(self):
-        t = datetime.now().strftime("%H:%M")
+        now = datetime.now()
+        t = now.strftime("%H:%M")
         self.off[t] += 1
-        print 'OFF',t
+        duration = (self.lasltOn - now).total_seconds()
+        print 'OFF',t,' was on for',duration,'seconds'
+        self.stats.append({
+            'on': self.lastOn,
+            'off': now,
+            'duration': duration,
+            'energy': 0.0
+        })
 
     def get_stats(self):
-        return {'on':self.on, 'off':self.off}
+        return {'stats': self.stats, 'counts': len(self.stats)}
