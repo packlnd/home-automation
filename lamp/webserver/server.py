@@ -15,6 +15,10 @@ def index():
 def morning():
     raise NotImplementedError
 
+@app.route("/status")
+def status():
+    return jsonify({'status': status})
+
 @app.route("/stats")
 def stats():
     return jsonify(pi.get_stats())
