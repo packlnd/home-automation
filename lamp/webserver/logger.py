@@ -19,6 +19,8 @@ class Logger:
         self.off[t] += 1
         duration = (self.lasltOn - now).total_seconds()
         print 'OFF',t,' was on for',duration,'seconds'
+        if duration < 5*60: # 5 minutes
+            return
         self.stats.append({
             'on': self.lastOn,
             'off': now,
