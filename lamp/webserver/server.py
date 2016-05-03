@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 from pi import Pi
+import alarm
 import os
 
 app = Flask(__name__)
@@ -14,8 +15,16 @@ def index():
 
 @app.route("/morning_alarm", methods=['POST'])
 def morning():
-    #TODO: Fix
-    print 'working'
+    time = request.args.get('time','')
+    print time
+    alarm.set_alarm(time)
+    return jsonify({'alarms': alarm.get_alarms()})
+
+@app.route("/remove_alarm", methods=['POST'])
+def remove_alarm():
+    alarm_id = request.args.get('id','')
+    alarm.remove_alarm(alarm_id)
+    return jsonify({'status': 200})
 
 @app.route("/status")
 def status():
