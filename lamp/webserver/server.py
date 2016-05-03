@@ -12,9 +12,10 @@ def index():
     #TODO Nice viz library for stats
     return render_template("index.html",data=status)
 
-@app.route("/morning_alarm")
+@app.route("/morning_alarm", methods=['POST'])
 def morning():
-    raise NotImplementedError
+    #TODO: Fix
+    print 'working'
 
 @app.route("/status")
 def status():

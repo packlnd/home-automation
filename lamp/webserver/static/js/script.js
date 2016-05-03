@@ -1,6 +1,9 @@
 $(function() {
   $('.timepicker').wickedpicker();
-  $("#inputtime").on('input', function() {
+  $("#inputtime").on("change", function() {
+    console.log('aa');
+  });
+  $("#buttontime").on('click', function() {
     var time = $('.timepicker').wickedpicker('time');
     console.log(time);
     $.ajax({

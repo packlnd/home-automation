@@ -17,7 +17,7 @@ class Logger:
         now = datetime.now()
         t = now.strftime("%H:%M")
         self.off[t] += 1
-        duration = (self.lasltOn - now).total_seconds()
+        duration = (now-self.lastOn).total_seconds()
         print 'OFF',t,' was on for',duration,'seconds'
         if duration < 5*60: # 5 minutes
             return
