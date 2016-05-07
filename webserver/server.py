@@ -10,7 +10,6 @@ status = False
 
 @app.route("/")
 def index():
-    #TODO Nice viz library for stats
     return render_template("index.html",data=status)
 
 @app.route("/morning_alarm", methods=['POST'])
