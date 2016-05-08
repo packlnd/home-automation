@@ -6,6 +6,7 @@ class Logger:
         self.on = defaultdict(lambda: 0)
         self.off = defaultdict(lambda: 0)
         self.stats = []
+        self.alarms = []
 
     def log_on(self):
         self.lastOn = datetime.now()
@@ -30,3 +31,6 @@ class Logger:
 
     def get_stats(self):
         return {'stats': self.stats, 'counts': len(self.stats)}
+
+    def add_alarm(self, alarm):
+        self.alarms.append(alarm)

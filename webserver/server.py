@@ -22,7 +22,7 @@ def morning():
 
 @app.route("/remove_alarm", methods=['POST'])
 def remove_alarm():
-    alarm_id = request.args.get('id','')
+    alarm_id = request.form['id']
     alarm.remove_alarm(alarm_id)
     return jsonify({'status': 200})
 
