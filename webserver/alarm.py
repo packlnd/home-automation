@@ -1,3 +1,5 @@
+alarms = []
+
 def set_alarm(time):
     s = time.split(' : ')
     s2 = s[1].split()
@@ -6,4 +8,4 @@ def set_alarm(time):
     logger.add_alarm(alarm)
 
 def get_alarms():
-    return {}
+    return alarms
