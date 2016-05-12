@@ -5,7 +5,7 @@ def set_alarm(time):
     s2 = s[1].split()
     s2.insert(0, s[0])
     alarm = tuple(s2)
-    logger.add_alarm(alarm)
+    return alarm
 
 def get_alarms():
     return alarms
