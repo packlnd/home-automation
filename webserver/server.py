@@ -17,8 +17,7 @@ def index():
 @app.route("/morning_alarm", methods=['POST'])
 def morning():
     time = request.form['time']
-    alarm = alarm.set_alarm(util.parse_time(time))
-    logger.log_alarm(alarm)
+    alarm.set_alarm(util.parse_time(time))
     return jsonify({'alarms': alarm.get_alarms()})
 
 @app.route("/remove_alarm", methods=['POST'])
