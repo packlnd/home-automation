@@ -9,10 +9,10 @@ pi = Pi(on=27, off=22)
 global lamp_status
 lamp_status = False
 
-@app.route("/")
+@app.route("/lamp")
 def index():
     global lamp_status
-    return render_template("index.html",data=lamp_status)
+    return render_template("lamp.html",data=lamp_status)
 
 @app.route("/morning_alarm", methods=['POST'])
 def morning():
