@@ -5,10 +5,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/wickedpicker.min.js') }}"></script>
   <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-  <title>Lamp project</title>
+  <title>Home automation</title>
 </head>
 <body>
   <center>
+    <h3>Lamp</h3>
     <div class="onoffswitch">
     {% if data %}
       <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
@@ -24,8 +25,21 @@
     <input type="text" name="timepicker" class="timepicker"/>
     <input type="button" id="buttontime" value="Set"/>
     <h3>Statistics</h3>
-      <div id="stats">
-        aaaaaaaaaaaaaaa
+    <div id="stats">
+      
+    </div>
+    <h3>Stocks</h3>
+    <div id="stocks">
+      <div id="stocks-content">
+        <table>
+            <tr>
+              <th>Company</th>
+              <th>Amount</th>
+              <th>Gain</th>
+            </tr>
+        </table>
+        <p id="money-made"></p>
       </div>
+    </div>
   </center>
 </body>

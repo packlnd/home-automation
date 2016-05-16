@@ -3,16 +3,17 @@ from pi import Pi
 import alarm
 import os
 import util
+import stocks
 
 app = Flask(__name__)
 pi = Pi(on=27, off=22)
 global lamp_status
 lamp_status = False
 
-@app.route("/lamp")
+@app.route("/")
 def index():
     global lamp_status
-    return render_template("lamp.html",data=lamp_status)
+    return render_template("index.html",data=lamp_status)
 
 @app.route("/morning_alarm", methods=['POST'])
 def morning():
@@ -49,6 +50,10 @@ def off():
     lamp_status = False
     pi.lamp_off()
     return jsonify({'status': 200})
+
+@app.route("/get_stocks")
+def get_stocks():
+    return jsonify(stocks.get_stocks())
 
 if __name__ == "__main__":
     lamp_status = False
