@@ -21,9 +21,10 @@ def populate_prices(data):
 
 def get_today(stock):
     s = Share(stock["quote"])
+    s.refresh()
     sw = float(usdsek.get_rate())
+    print s.get_price(), s.get_open(), s.get_change(), s.get_trade_datetime()
     val = float(stock["amount"])*(float(s.get_price()) - float(s.get_open()))
     if stock["curr"] == "USD":
         val *= sw
     return val
-
