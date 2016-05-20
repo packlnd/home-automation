@@ -1,7 +1,6 @@
-from yahoo_finance import Share, Currency
+from yahoo_finance import Currency
 import json
-
-usdsek = Currency("USDSEK")
+import ystockquote as ysq
 
 def get_stocks():
     data = None
@@ -11,7 +10,6 @@ def get_stocks():
     return data
 
 def populate_prices(data):
-    usdsek.refresh()
     tot = 0.0
     for i in range(len(data["stocks"])):
         t = get_today(data["stocks"][i])
@@ -20,11 +18,13 @@ def populate_prices(data):
     data["total"] = tot
 
 def get_today(stock):
-    s = Share(stock["quote"])
-    s.refresh()
-    sw = float(usdsek.get_rate())
-    print s.get_price(), s.get_open(), s.get_change(), s.get_trade_datetime()
-    val = float(stock["amount"])*(float(s.get_price()) - float(s.get_open()))
-    if stock["curr"] == "USD":
-        val *= sw
-    return val
+    #usdsek = Currency("USDSEK")
+    print str(stock["quote"])
+    s = ysq.get_price(str(stock["quote"]))
+    #sw = float(usdsek.get_rate())
+    print s
+    #val = float(stock["amount"])*(float(s.get_price()) - float(s.get_open()))
+    #if stock["curr"] == "USD":
+    #    val *= sw
+    #return val
+    return 2
