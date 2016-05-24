@@ -10,13 +10,16 @@ import UIKit
 import Alamofire
 
 class LampViewController: UIViewController {
+    @IBOutlet weak var onOffSwitch: UISwitch!
     let ip = "http://10.157.160.44:5000/"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let action = "status"
         let url = "\(ip)\(action)"
         let status = Alamofire.request(.GET, url)
-        // Do any additional setup after loading the view, typically from a nib.
+        print(status)
+        self.onOffSwitch.setOn(status, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
