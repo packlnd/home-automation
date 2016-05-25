@@ -30,14 +30,20 @@ $(function() {
     type: "GET",
     url: "/stats",
     success: function(data) {
-      $("#stats").html(JSON.stringify(data));
+      $("#stats").html("");
+      for(var key in data["stats"]) {
+        $("#stats").append(JSON.stringify(data["stats"][key]));
+      }
     }
   });
   $.ajax({
     type: "GET",
     url: "/get_stocks",
     success: function(data) {
-      $("#stocks").html(JSON.stringify(data));
+      $("#stocks").html("");
+      for(var key in data) {
+        $("#stocks").append(key + ": " + JSON.stringify(data[key]));
+      }
     }
   });
 });
