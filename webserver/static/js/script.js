@@ -30,8 +30,14 @@ $(function() {
     type: "GET",
     url: "/stats",
     success: function(data) {
-      console.log(data);
       $("#stats").html(JSON.stringify(data));
+    }
+  });
+  $.ajax({
+    type: "GET",
+    url: "/get_stocks",
+    success: function(data) {
+      $("#stocks").html(JSON.stringify(data));
     }
   });
 });
