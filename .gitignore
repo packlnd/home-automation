@@ -1,2 +1,4 @@
 .DS_STORE
 *.pyc
+app/home-automation-controller/home-automation-controller.xcodeproj/*
+app/home-automation-controller/home-automation-controller.xcworkspace/*
