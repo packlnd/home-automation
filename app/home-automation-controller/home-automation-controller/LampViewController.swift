@@ -13,13 +13,21 @@ class LampViewController: UIViewController {
     @IBOutlet weak var onOffSwitch: UISwitch!
     let ip = "http://10.157.160.44:5000/"
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let action = "status"
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        let action = "lamp_status"
         let url = "\(ip)\(action)"
-        let status = Alamofire.request(.GET, url)
-        print(status)
-        self.onOffSwitch.setOn(status, animated: true)
+        Alamofire.request(.GET, url)
+            .validate()
+            .responseJSON { response in
+                if let JSON = response.result.value {
+                    if let status = JSON["status"] as? Int {
+                        if status == 0 {
+                            self.onOffSwitch.setOn(false, animated: false)
+                        }
+                    }
+                }
+        }
     }
     
     override func didReceiveMemoryWarning() {
