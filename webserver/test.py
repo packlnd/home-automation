@@ -13,6 +13,10 @@ for d in s:
 stats = (logger.Logger()).get_stats()
 assert(type(stats) == dict)
 assert(len(stats) == 2)
+for key in stats.keys():
+    assert(type(key) == str)
+###
+
 ###
 
 print '\nOK.'
