@@ -1,6 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 from logger import Logger
+#finals week
 
 GPIO.setmode(GPIO.BCM)
 class Pi:
