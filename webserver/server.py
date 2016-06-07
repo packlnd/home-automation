@@ -1,14 +1,17 @@
 from flask import Flask, request, jsonify, render_template
+import os
+
 from pi import Pi
 import alarm
-import os
 import util
 import stocks
+import scheduler
 
 app = Flask(__name__)
 pi = Pi(on=27, off=22)
 global lamp_status
 lamp_status = False
+scheduler = Scheduler()
 
 @app.route("/")
 def index():
