@@ -17,7 +17,7 @@ def test_GPIO(pin_no):
 def main():
     GPIO.setmode(GPIO.BCM)
     if len(sys.argv) < 1:
-        print 'Usage: python relay_test pin1 pin2 pin3'
+        print 'Usage: python relay_test pin_1 pin_2 ... pin_n'
     pins = [int(s) for s in sys.argv]
     init_pins(pins)
     for _ in range(5):
