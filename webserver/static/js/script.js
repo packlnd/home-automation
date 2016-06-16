@@ -1,7 +1,7 @@
 $(function() {
   $('.timepicker').wickedpicker();
   $('#inputtime').on('change', function() {
-    console.log('aa');
+    //TODO: Cron job on server
   });
   $("#buttontime").on('click', function() {
     var time = $('.timepicker').wickedpicker('time');
