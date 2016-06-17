@@ -9,3 +9,4 @@ def set_alarm(time):
 
 def get_alarms():
     return alarms
+
