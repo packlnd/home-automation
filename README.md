@@ -5,6 +5,6 @@
 ### Project ideas
 * Alarm clock
 * Media player
-* Magic mirror
+* Magic mirror (http://michaelteeuw.nl/post/80391333672/magic-mirror-part-i-the-idea-the-mirror)
 * Photo frame
 * Music system
