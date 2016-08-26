@@ -8,3 +8,4 @@
 * Magic mirror (http://michaelteeuw.nl/post/80391333672/magic-mirror-part-i-the-idea-the-mirror)
 * Photo frame
 * Music system
+* Something with Android TV
